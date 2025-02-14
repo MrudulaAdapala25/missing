@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  
+  height: 100%;
+  width: 100%;
+  background-image: url('https://www.shutterstock.com/shutterstock/photos/2307570179/display_1500/stock-photo-missing-person-text-written-with-a-typewriter-2307570179.jpg'); /* Add your background image URL */
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+   /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+h1 {
+  margin-bottom: 20px; /* Space below the header */
+  text-align: center;
+}
+
+.grid-form {
+  display: flex;
+  flex-direction: column; /* Aligns inputs in a top-down layout */
+  gap: 15px; /* Adds space between form elements */
+  width: 100%; /* Full width for alignment */
+  max-width: 500px; /* Set max-width for better readability */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px; /* Match max-width of form */
+  margin-top: 20px; /* Space above the button */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.registered-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: darkblue;
+  text-align: center;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+.container {
+   /* Set a max width for the container */
+  margin: 0 auto;   /* Center the container */
+  padding: 10px;    /* Add padding around the content */
+  background-color: rgba(229, 226, 228, 0.6); /* Optional: add a white background with some transparency *//* Rounded corners for aesthetic */
+  /* Shadow for depth */
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns: first for labels, second for inputs */
+  gap: 15px; /* Space between rows and columns */
+}
+
+.form-group {
+  display: contents; /* This allows the grid to recognize the direct children */
+}
+
+.form-group label {
+  font-weight: bold; /* Make labels bold */
+  align-self: center; /* Center label vertically */
+}
+
+.form-group input {
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+}
+
+.submit-btn {
+  grid-column: span 2; /* Make the submit button span both columns */
+  padding: 10px; /* Padding for the button */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.registered-list {
+  margin-top: 20px; /* Space above the registered list */
+  list-style-type: none; /* Remove bullets from list */
+  padding: 0; /* Remove padding */
+}
+
+.back-link {
+  display: inline-block; /* Keep link inline */
+  margin-top: 20px; /* Space above the link */
+  text-decoration: none; /* Remove underline */
+  color: darkblue; /* Link color */
+}
+
+.back-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
